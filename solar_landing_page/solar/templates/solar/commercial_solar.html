@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Solar - Solar Energy</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/commercial-solar.css' %}">
+    <!-- Google Fonts for a modern look (Raleway and Lato) -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Lato:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Reused from index.html and residential_solar.html) -->
+    <header class="header animate-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Solar Energy Logo" class="logo-img">
+                <span class="logo-text">Solar Energy</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                    <li><a href="{% url 'commercial_solar' %}" class="nav-link">Commercial Solar</a></li>
+                    <li><a href="{% url 'residential_solar' %}" class="nav-link">Residential Solar</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="#contact" class="btn contact-btn pulse">Contact Us</a>
+                <span class="phone"><i class="fas fa-phone-alt"></i> +012-345-677-890</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- First Part: Commercial Solar Hero Section -->
+    <section class="commercial-hero">
+        <div class="hero-overlay">
+            <h1 class="fade-in">Commercial Solar</h1>
+            <a href="#" class="btn hero-btn fade-in">View Recipes</a>
+        </div>
+    </section>
+
+    <!-- Image Grid -->
+    <section class="image-grid">
+        <div class="container">
+            <div class="images">
+                <img src="{% static 'images/commercial-solar-1.jpg' %}" alt="Commercial Solar 1" class="grid-img zoom-in">
+                <img src="{% static 'images/commercial-solar-2.jpg' %}" alt="Commercial Solar 2" class="grid-img zoom-in">
+                <img src="{% static 'images/commercial-solar-3.jpg' %}" alt="Commercial Solar 3" class="grid-img zoom-in">
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Cards -->
+    <section class="commercial-content-cards">
+        <div class="container">
+            <div class="content-cards-wrapper">
+                <!-- Left Column: Heading and Button -->
+                <div class="content-cards-text">
+                    <h2>Commercial Solar Solutions</h2>
+                    <p>Lower your business costs and make a sustainable impact</p>
+                    <a href="#" class="btn contact-btn">Contact Us</a>
+                </div>
+                <!-- Right Column: 2x2 Grid of Cards -->
+                <div class="cards">
+                    <div class="card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Reduce your electricity bills</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                        <a href="#" class="card-btn">Learn More</a>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Cleaner future for next generations</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                        <a href="#" class="card-btn">Learn More</a>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Reduce your carbon footprints</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                        <a href="#" class="card-btn">Learn More</a>
+                    </div>
+                    <div class="card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3>Enjoy your Solar Panels in your roofs</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                        <a href="#" class="card-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Successful Projects Section -->
+    <section class="successful-projects">
+        <div class="container">
+            <h2>Our Successful Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <img src="{% static 'images/project1.jpg' %}" alt="Project 1" class="project-img">
+                    <h3>What is Solar Panel?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="{% static 'images/project2.jpg' %}" alt="Project 2" class="project-img">
+                    <h3>Guide to buy Solar Panel for your house</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="{% static 'images/project3.jpg' %}" alt="Project 3" class="project-img">
+                    <h3>How can we put solar panel into the roof?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="{% static 'images/project4.jpg' %}" alt="Project 4" class="project-img">
+                    <h3>What is the price for USA in 2025?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="{% static 'images/project5.jpg' %}" alt="Project 5" class="project-img">
+                    <h3>How Solar Panel will save your house electricity</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card fade-in">
+                    <img src="{% static 'images/project6.jpg' %}" alt="Project 6" class="project-img">
+                    <h3>What are the benefits of using Solar Panel in our house?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim nisl.</p>
+                    <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-us-content">
+                <div class="contact-us-image fade-in">
+                    <img src="{% static 'images/contact-us-image.jpg' %}" alt="Contact Us Image">
+                </div>
+                <div class="contact-us-form fade-in">
+                    <h3>Straight from our desk, to your inbox.</h3>
+                    <p>Subscribe to our newsletter</p>
+                    <form class="subscription-form">
+                        <input type="text" placeholder="Your Full Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer fade-in">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-branding">
+                    <div class="logo">
+                        <img src="{% static 'images/logo.png' %}" alt="Solar Energy Logo" class="logo-img">
+                        <span class="logo-text">Solar Energy</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Mi nibh venenatis in adipiscing. Scelerisque turpis e cursus vulputate amet. Lorem ipsum.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'commercial_solar' %}">Commercial Solar</a></li>
+                        <li><a href="{% url 'residential_solar' %}">Residential Solar</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Solar System Design</a></li>
+                        <li><a href="#">Procurement</a></li>
+                        <li><a href="#">Panel Installation</a></li>
+                        <li><a href="#">Operations & Maintenance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Sticky Header and Animations -->
+    <script>
+        // Sticky Header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll Animations
+        const elements = document.querySelectorAll('.fade-in, .zoom-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        elements.forEach(element => observer.observe(element));
+    </script>
+</body>
+</html>
